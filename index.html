@@ -4,52 +4,66 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Haris Mehmood</title>
-  <meta name="description" content="Haris Mehmood – projects and notes on what I'm learning.">
+  <meta name="description" content="Haris Mehmood – first-year CS (Industrial) student at Leeds, focused on security.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <a href="index.html" class="logo">Haris Mehmood</a>
-      <nav>
-        <a href="index.html" class="active">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="blog/index.html">Blog</a>
-      </nav>
-    </div>
-  </header>
+  <main class="container">
 
-  <main>
-    <div class="container">
-      <h1>Hi, I'm Haris Mehmood.</h1>
-      <p class="intro">
-        I'm a computer science student who learns by building things, with an interest in
-        security and Python. This site is where I keep my projects and write up what I learn along the way.
-      </p>
+    <!-- 1. Header -->
+    <header>
+      <h1>Haris Mehmood</h1>
+      <p class="intro">First-year CS (Industrial) student at Leeds, focused on security.</p>
+    </header>
 
+    <!-- 2. Projects: copy a .card block to add one -->
+    <section>
+      <h2>Projects</h2>
+
+      <article class="card">
+        <h3>Password Strength Checker</h3>
+        <p>
+          A Python password strength estimator inspired by zxcvbn that works out how many
+          guesses an attacker would need, rather than just checking length and character types.
+          It spots common words, years, keyboard patterns and repeats, then gives a 0–4 score,
+          online/offline crack times and feedback on the weak parts.
+        </p>
+        <div class="tags"><span>Python</span><span>pytest</span><span>GitHub Actions</span></div>
+        <a href="https://github.com/haris-221/password-strength-checker">View on GitHub →</a>
+      </article>
+
+      <!-- Week 8: uncomment and fill in once the HTB write-up repo exists
+      <article class="card">
+        <h3>Hack The Box Write-up: MACHINE NAME</h3>
+        <p>
+          ONE SENTENCE ON THE MACHINE. ONE SENTENCE ON HOW YOU GOT IN / WHAT YOU LEARNED.
+        </p>
+        <div class="tags"><span>Linux</span><span>Nmap</span><span>TOOL</span></div>
+        <a href="https://github.com/haris-221/REPO-NAME">View on GitHub →</a>
+      </article>
+      -->
+
+      <article class="card">
+        <h3>This site</h3>
+        <p>
+          A single-page portfolio written in plain HTML and CSS with no framework.
+          Hosted on GitHub Pages and deployed with a git push.
+        </p>
+        <div class="tags"><span>HTML</span><span>CSS</span><span>GitHub Pages</span></div>
+        <a href="https://github.com/haris-221/haris-221.github.io">View on GitHub →</a>
+      </article>
+    </section>
+
+    <!-- 3. Links -->
+    <section>
+      <h2>Links</h2>
       <p class="links">
         <a href="https://github.com/haris-221">GitHub</a>
-        <!-- Add LinkedIn here when you have the URL -->
+        <!-- <a href="https://www.linkedin.com/in/YOUR-LINKEDIN">LinkedIn</a> -->
         <a href="mailto:harismehmood850@gmail.com">Email</a>
       </p>
+    </section>
 
-      <h2>Featured project</h2>
-      <a class="card" href="projects.html">
-        <h3>Password Strength Checker</h3>
-        <p>A Python password strength estimator, inspired by zxcvbn, that works out how many guesses an attacker would need and explains what makes a password weak.</p>
-        <div class="tags"><span>Python</span><span>Security</span><span>pytest</span></div>
-      </a>
-
-      <h2>Latest posts</h2>
-      <a class="card" href="blog/building-this-site.html">
-        <h3>Building this site</h3>
-        <p class="meta">November 2026</p>
-      </a>
-    </div>
   </main>
-
-  <footer>
-    <div class="container">© 2026 Haris Mehmood</div>
-  </footer>
 </body>
 </html>
